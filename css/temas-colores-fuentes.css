@@ -1,0 +1,28 @@
+﻿/* URL Paleta de colores LIGHT: https://www.coloreasily.com/?colors=000000-ffffff-dcdcdc-ff8b8e-ffe88b */
+/* URL Paleta de colores DARK: https://www.coloreasily.com/?colors=ffffff-2d2d2d-000000-2d74fe-2dd22d */
+@import url('https://fonts.google.com/share?selection.family=Jersey+10');
+@import url('https://fonts.google.com/share?selection.family=Space+Grotesk:wght@300..700');
+@import url('https://fonts.google.com/share?selection.family=Work+Sans:ital,wght@0,100..900;1,100..900');
+
+:root {
+   --light-color-texto: #000000;
+   --light-color-fondo: #ffffff;
+   --light-color-acento-1: #dcdcdc;
+   --light-color-acento-2: #ff8b8e;
+   --light-color-acento-3: #ffe88b;
+   --dark-color-texto: #ffffff;
+   --dark-color-fondo: #2d2d2d;
+   --dark-color-acento-1: #000000;
+   --dark-color-acento-2: #2d74fe;
+   --dark-color-acento-3: #2dd22d;
+}
+
+ .light-theme {
+   color: var(--light-color-texto);
+   background-color: var(--light-color-fondo);
+}
+
+.dark-theme {
+   color: var(--dark-color-texto);
+   background-color: var(--dark-color-fondo);
+}
