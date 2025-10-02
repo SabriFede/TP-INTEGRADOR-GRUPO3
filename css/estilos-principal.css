@@ -106,7 +106,7 @@
 }
 
 body { 
-   background-color: var(--light-color-fondo);
+   background-color: var(--light-color-acento-1);
 }
 #navegacion-categoria {
    background-color: lime;
@@ -114,7 +114,7 @@ body {
 
 #seccion-categoria {
    min-height: 720px;
-   background-color: orange;
+   background-color: var(--light-color-acento-1);
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-template-rows: repeat(4, auto);
@@ -129,8 +129,9 @@ body {
    flex-direction: column;
    text-align: center;
    border-radius: 15px;
-   background-color: var(--light-color-acento-1);
-   
+   background-color: var(--light-color-fondo);
+
+
   
 }
 
@@ -145,16 +146,24 @@ body {
 }
 
 
+
+
+
 .item-valor-portada {
    width:300px;
    height:300px;
 }
 
 .detalle-articulo {
+   font-family: 'Space Grotesk';
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-template-rows: repeat(5, auto);
-   gap: 10px;
+   gap: 1px;
+   margin: 0px;
+   align-items: center;
+
+
 
 }
 
@@ -162,6 +171,12 @@ body {
    text-transform: uppercase;
    font-family: 'Jersey 10';
    font-size: xxx-large;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border: 0px;
+   border-bottom: 1px;
+   border-color: black;
+   border-style: solid;
    
 }
 
@@ -169,3 +184,24 @@ body {
 font-family: 'Space Grotesk';
 
 }
+
+.item-valor-descripcion {
+   font-family: 'Space Grotesk';
+}
+
+.item-valor-rating {
+   font-family: 'Space Grotesk';
+}
+
+
+
+.item-campo-personalizado {
+   padding: 2px;
+   
+}
+
+.detalle-articulo h4,
+.detalle-articulo p {
+   margin: 5px;
+}
+
