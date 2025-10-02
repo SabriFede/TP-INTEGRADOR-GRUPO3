@@ -1,4 +1,4 @@
-﻿/* @import url("temas-colores-fuentes.css"); */
+﻿@import url("temas-colores-fuentes.css");
 
 #encabezado-principal {
    background-color: red;
@@ -12,10 +12,22 @@
 #seccion-categoria {
    min-height: 720px;
    background-color: orange;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(4, auto);
+   gap: 20px;
+   max-width: 1200px;
+   margin: auto;
 }
 
 .articulo-categoria {
    border: solid 3px gray;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   border-radius: 15px;
+   background-color: var(--light-color-acento-1);
+  
 }
 
 #footer-principal {
@@ -26,4 +38,18 @@
 #qr-code {
    width:100px;
    height:100px;
+}
+
+
+.item-valor-portada {
+   width:300px;
+   height:300px;
+}
+
+.detalle-articulo {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(5, auto);
+   gap: 10px;
+
 }
