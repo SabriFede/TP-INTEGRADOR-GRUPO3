@@ -205,3 +205,38 @@ font-family: 'Space Grotesk';
    margin: 5px;
 }
 
+#footer-principal {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   color: black;
+   background-color: #DCDCDC;
+   font-family: 'Work Sans';
+}
+
+#footer-principal-izquierda {
+  text-align: left;
+}
+
+#footer-principal-derecha {
+  text-align: right;
+}
+
+#footer-principal-centro {
+  text-align: center;
+}
+
+#iconos-footer {
+   display: flex;
+   justify-content: center;
+   margin: 10px 0;
+   gap: 6px;
+}
+
+.icono-footer {
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+}
+
