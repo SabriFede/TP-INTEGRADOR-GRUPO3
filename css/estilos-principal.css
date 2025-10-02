@@ -15,19 +15,7 @@
    padding: 0 40px;
 }
 
-/* Tablet y pantallas medianas */
-@media (max-width: 1024px) {
-    #encabezado-principal {
-        padding: 0 25px;
-    }
-}
 
-/* Celulares y pantallas pequeñas */
-@media (max-width: 600px) {
-    #encabezado-principal {
-        padding: 0;
-    }
-}
 
 #LogoTEMACLARO{
    width: auto;
@@ -130,9 +118,11 @@ body {
    text-align: center;
    border-radius: 15px;
    background-color: var(--light-color-fondo);
+     
+}
 
-
-  
+.articulo-categoria:hover {
+   transform: scale(1.02);
 }
 
 #footer-principal {
@@ -240,3 +230,22 @@ font-family: 'Space Grotesk';
    cursor: pointer;
 }
 
+/* Tablet y pantallas medianas */
+@media (max-width: 1024px) {
+    #encabezado-principal {
+        padding: 0 25px;
+    }
+    #seccion-categoria {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Celulares y pantallas pequeñas */
+@media (max-width: 600px) {
+    #encabezado-principal {
+        padding: 0;
+    }
+    #seccion-categoria {
+      grid-template-columns: 1fr;
+    }
+}
