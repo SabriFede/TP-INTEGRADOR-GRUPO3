@@ -10,13 +10,34 @@
 </head>
 
 <body>
-   <header id="encabezado-principal">
-      <h1>ENCABEZADO PRINCIPAL --- LOGO+BUSCADOR+ICONOS</h1>
+   <header id="encabezado-principal" class="contenedor">
+      <div class="logo-contenedor">
+         <img id="LogoTEMACLARO" src='assets/img/LogoTEMACLARO.PNG'>
+      </div>
+
+      <div id="buscador">
+         <form id="buscar-form">
+            <input id="input-search" type="text" placeholder="buscar...">
+            <button id="search-button" type="submit">
+               <img id="search-icon" src="assets/img/buscador.svg" alt="buscar">
+            </button>
+         </form>
+      </div>
+      
+      <div id="iconos-encabezado" class="contenedor">
+         <img id="icono-tema" class="icono" src="assets/img/tema-a-oscuro.svg">
+         <img id="icono-favorito" class="icono" src="assets/img/corazon.svg">
+         <img id="icono-usuario" class="icono" src="assets/img/usuario.svg">
+      </div>
    </header>
    <header id="encabezado-secundario">
-      <h1>ENCABEZADO SECUNDARIO --- CARRUSEL</h1>
+      <div id="carrusel">
+         <div class="carrusel-contenedor">
+            
+         </div>
+  </div>
    </header>
-
+   
    <main>
       <nav id="navegacion-categoria">
          <a href="#" id="tab-categoria-1" class="tab-categoria">Eléctrico</a>
