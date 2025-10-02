@@ -5,6 +5,9 @@
    color: white;
 }
 
+body { 
+   background-color: var(--light-color-fondo);
+}
 #navegacion-categoria {
    background-color: lime;
 }
@@ -21,12 +24,13 @@
 }
 
 .articulo-categoria {
-   border: solid 3px gray;
+   border: solid 3px black;
    display: flex;
    flex-direction: column;
    text-align: center;
    border-radius: 15px;
    background-color: var(--light-color-acento-1);
+   
   
 }
 
@@ -57,6 +61,11 @@
 .item-valor-nombre {
    text-transform: uppercase;
    font-family: 'Jersey 10';
-   font-size: xx-large;
+   font-size: xxx-large;
    
+}
+
+.item-valor-autor {
+font-family: 'Space Grotesk';
+
 }
