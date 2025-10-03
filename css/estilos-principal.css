@@ -196,12 +196,14 @@ font-family: 'Space Grotesk';
 }
 
 #footer-principal {
+   margin-top: 20px;
+   border-top: 1px solid black;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 20px;
+   padding: 15px;
    color: black;
-   background-color: #DCDCDC;
+   background-color: white;
    font-family: 'Work Sans';
 }
 
@@ -230,6 +232,30 @@ font-family: 'Space Grotesk';
    cursor: pointer;
 }
 
+#navegacion-categoria {
+   background-color: #DCDCDC;
+   display: flex;
+   justify-content: center;
+   border: none;
+   gap: 10px;
+   padding: 10px 0;
+}
+
+.tab-categoria {
+   font-family: "Work Sans";
+   text-align: center;
+   padding: 10px;
+   flex: 1;
+   background-color: white;
+   border: solid #DCDCDC 1px;
+   border-radius: 8px;
+   text-decoration: none;
+}
+
+.tab-categoria:hover
+{
+   background-color: #ff8b8e;
+}
 /* Tablet y pantallas medianas */
 @media (max-width: 1024px) {
     #encabezado-principal {
