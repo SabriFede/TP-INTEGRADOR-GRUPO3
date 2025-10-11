@@ -12,17 +12,55 @@ h1 {
     text-align: center;
 }
 
+@keyframes moverBorde {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .formulario {
 
-    border: 2px solid var(--dark-color-acento-2);
+    /* (sin animación) 
+    background-color: #dcdcdc;
+    border: 6px solid transparent;
+    border-image: linear-gradient(to right,var(--light-color-acento-2), var(--light-color-acento-3), var(--dark-color-acento-3), var(--dark-color-acento-2)) 1;
+    border-radius: 30px;
+    max-width: 50vh;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: 0 auto;	
+    margin: 0 auto;	 */
 	
+    position: relative;
+    border-radius: 30px;
+    max-width: 50vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    background: 
+        linear-gradient(#dcdcdc, #dcdcdc) padding-box,
+        linear-gradient(270deg, var(--light-color-acento-2), var(--light-color-acento-3),var(--dark-color-acento-3), var(--dark-color-acento-2))border-box;
+    border: 4px solid transparent;
+    background-size: 300% 300%;
+    animation: moverBorde 6s ease infinite;
 	
+}
+
+.terminos-y-condiciones{
+    width: 80%;
+    padding-bottom: 10px;
+    margin: 0 auto;
 }
 
 input {
@@ -34,7 +72,7 @@ input {
 }
 
 button {
-    background-color: var(--dark-color-acento-2);
+    background: linear-gradient(to right, var(--light-color-acento-2), var(--light-color-acento-3));
     border-radius: 5px;
     color: white;
     width: 80%;
@@ -45,3 +83,13 @@ button {
 
 }
 
+button:hover{
+    background: linear-gradient(to right, var(--dark-color-acento-2), var(--dark-color-acento-3));
+}
+
+/* Celulares y pantallas pequeñas */
+@media (max-width: 600px) {
+    .formulario{
+        max-width: 90%;
+    }
+}
