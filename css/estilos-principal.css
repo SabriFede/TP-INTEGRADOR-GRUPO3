@@ -257,7 +257,7 @@ font-family: 'Space Grotesk';
    background-color: #ff8b8e;
 }
 /* Tablet y pantallas medianas */
-@media (max-width: 1024px) {
+@media (max-width: ) {
     #encabezado-principal {
         padding: 0 25px;
     }

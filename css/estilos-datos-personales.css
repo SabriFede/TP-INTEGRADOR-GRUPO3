@@ -1,42 +1,73 @@
 @import url("temas-colores-fuentes.css");
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Space Grotesk';
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90fr;
+    min-height:100vh;
+    margin: 0;
 }
 
 h1 {
     text-align: center;
 }
 
-.formulario {
+h2{
+    text-align: center;
+}
 
-    border: 2px solid var(--dark-color-acento-2);
-    width: 50%;
+@keyframes moverBorde {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.formulario {
+    border-radius: 30px;
+    max-width: 60vh;
     padding: 10px;
+    background: 
+        linear-gradient(#dcdcdc, #dcdcdc) padding-box,
+        linear-gradient(270deg, var(--light-color-acento-2), var(--light-color-acento-3),var(--dark-color-acento-3), var(--dark-color-acento-2))border-box;
+    border: 4px solid transparent;
+    background-size: 300% 300%;
+    animation: moverBorde 6s ease infinite;
 }
 
 input {
     width: 80%;
     height: 30px;
     margin: 2px;
-    border: 1px solid var(--light-color-texto);
+    border: 1px solid #dcdcdc;
     border-radius: 5px;
 
 }
 
 button {
-    background-color: var(--dark-color-acento-2);
+    background: linear-gradient(to right, var(--light-color-acento-2), var(--light-color-acento-3));
     border-radius: 5px;
+    border: 1px solid #dcdcdc;
     color: white;
     width: 80%;
     height: 3rem;
     margin: 2px;
     margin-top: 20px;
     margin-bottom: 15px;
+}
+
+button:hover{
+    background: linear-gradient(to right, var(--dark-color-acento-2), var(--dark-color-acento-3));
 }
 
 .boton {
@@ -51,7 +82,26 @@ text-align: center;
 .form-contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 15px 20px;
+    margin: 0 auto;
+    width: 80%;
 
+}
 
+.form-contenedor input{
+    width: 100%;
+}
+
+/* Celulares y pantallas pequeñas */
+@media (max-width: 600px) {
+    .formulario {
+        max-width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .form-contenedor {
+        grid-template-columns: 1fr;  /* solo una columna */
+        width: 80%;
+    }
 }
