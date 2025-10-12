@@ -3,6 +3,15 @@
     box-sizing: border-box;
 }
 
+/* Reset básico */
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #encabezado-principal {
    background-color: rgb(255, 255, 255);
    color: white;
@@ -80,7 +89,7 @@
    align-items: center;
    justify-content: space-around;
    background-color: #DCDCDC;
-   border: 2px solid #DCDCDC;
+   /* border: 2px solid #DCDCDC; */
    border-radius: 25px;
    height: 6vh;
    width: 18vh;
@@ -95,7 +104,13 @@
 
 body { 
    background-color: var(--light-color-acento-1);
+   
 }
+
+main{
+   padding: 0 20px;
+}
+
 #navegacion-categoria {
    background-color: lime;
 }
@@ -252,9 +267,25 @@ font-family: 'Space Grotesk';
    text-decoration: none;
 }
 
-.tab-categoria:hover
-{
-   background-color: #ff8b8e;
+#tab-categoria-1:hover{
+   background-color: var(--light-color-acento-3);
+   color: var(--light-color-texto);
+}
+#tab-categoria-2:hover{
+   background-color: var(--dark-color-acento-2);
+   color: var(--light-color-fondo);
+}
+#tab-categoria-3:hover{
+   background-color: var(--light-color-acento-2);
+   color: var(--light-color-fondo);
+}
+#tab-categoria-4:hover{
+   background-color: var(--dark-color-acento-3);
+   color: var(--light-color-fondo);
+}
+#tab-categoria-5:hover{
+   background: linear-gradient(to right, var(--light-color-acento-2), var(--dark-color-acento-2));
+   color: var(--light-color-fondo);
 }
 /* Tablet y pantallas medianas */
 @media (max-width:  1024px) {
