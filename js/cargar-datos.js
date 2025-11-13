@@ -12,14 +12,16 @@ linksCategorias.forEach((linkCategoria) => {
 
          if (linkCategoria.innerText != Categoria) return;
          const articuloContenedor = document.querySelector("article." + Id.split("-")[1])
+         
+         articuloContenedor.classList.remove('clicked');
 
          articuloContenedor.getElementsByClassName("item-valor-nombre")[0].innerText = Nombre;
          articuloContenedor.getElementsByClassName("item-valor-autor")[0].innerText = Autor;
          articuloContenedor.getElementsByClassName("item-valor-portada")[0].src = Portada;
          articuloContenedor.getElementsByClassName("item-valor-portada")[0].alt = Nombre;
-         articuloContenedor.getElementsByClassName("item-valor-descripcion")[0].innerText = Descripcion;
-         articuloContenedor.getElementsByClassName("item-valor-rating")[0].innerText = Rating;
-
+         articuloContenedor.getElementsByClassName("item-valor-descripcion")[0].innerText = Descripcion;         
+         calculoEstrellas(articuloContenedor.getElementsByClassName("item-valor-rating")[0], Rating);
+         
          const personalizados = Object.keys(item).filter(key => key.startsWith("personalizado_"));
          
          personalizados.forEach((personalizado, index) => {
@@ -29,6 +31,8 @@ linksCategorias.forEach((linkCategoria) => {
 
          articuloContenedor.id = Id;
       });
+
+      actualizarElementosSegunBusqueda();
    });
 });
 

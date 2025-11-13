@@ -1,38 +1,73 @@
 @import url("temas-colores-fuentes.css");
 
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Space Grotesk';
+}
+
 body {
     font-family: 'Space Grotesk';
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    height: 100vh;
 }
 
 h1 {
     text-align: center;
 }
 
+@keyframes moverBorde {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .formulario {
 
-    border: 2px solid var(--dark-color-acento-2);
+    position: relative;
+    border-radius: 30px;
+    max-width: 50vh;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    flex: 1;
     justify-content: center;
     text-align: center;
+    margin: 0 auto;
+    background: 
+        linear-gradient(#dcdcdc, #dcdcdc) padding-box,
+        linear-gradient(270deg, var(--light-color-acento-2), var(--light-color-acento-3),var(--dark-color-acento-3), var(--dark-color-acento-2))border-box;
+    border: 4px solid transparent;
+    background-size: 300% 300%;
+    animation: moverBorde 6s ease infinite;
+}
+
+.politicas-de-privacidad{
+    width: 80%;
+    padding-bottom: 10px;
+    margin: 0 auto;
 }
 
 input {
     width: 80%;
     height: 3rem;
     margin: 2px;
-    border: 1px solid var(--light-color-texto);
+    border: 1px solid #dcdcdc;
     border-radius: 5px;
 }
 
 button {
-    background-color: var(--dark-color-acento-2);
+    background: linear-gradient(to right, var(--light-color-acento-2), var(--light-color-acento-3));
     border-radius: 5px;
+    border: 1px solid #dcdcdc;
     color: white;
     width: 80%;
     height: 3rem;
@@ -42,3 +77,134 @@ button {
 
 }
 
+button:hover{
+    background: linear-gradient(to right, var(--dark-color-acento-2), var(--dark-color-acento-3));
+}
+
+/* Celulares y pantallas pequeñas */
+@media (max-width: 600px) {
+    .formulario{
+        max-width: 90%;
+    }
+}
+
+#footer-principal {
+   width: 100%;
+   border-top: 1px solid black;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   padding:10px 0px;
+   box-sizing: border-box;
+   color: black;
+   background-color: white;
+   margin-top: 15px;
+   font-family: 'Work Sans';
+}
+
+#footer-principal div {
+    flex: 1;
+    text-align: center;
+}
+
+#footer-principal-centro > div {
+    flex: 1 1 200px;
+    min-width: 150px;
+}
+
+@media (max-width: 768px) {
+    #footer-principal-centro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+     #footer-principal-centro > div {
+        flex: 1 1 100%;
+        margin-bottom: 15px;
+    }
+
+     #footer-principal-centro form .newsletter-campos {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        flex-wrap: wrap;
+     }
+
+       #footer-principal-centro form .newsletter-campos input,
+    #footer-principal-centro form .newsletter-campos button {
+        width: 100%;
+
+    }
+}
+
+#footer-principal-izquierda p,
+#footer-principal-centro p,
+#footer-principal-derecha p {
+    color: #333;
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+
+#footer-principal-izquierda p{
+    text-align: left;
+    margin-left: 10px;
+}
+
+#footer-principal-derecha p{
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+#footer-principal-centro form .newsletter-campos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#footer-principal-centro form input, 
+#footer-principal-centro form button {
+    display: inline-block;
+}
+
+ 
+#footer-principal-centro form .newsletter-campos button {
+    margin-left: 5px;
+    width: 110px;
+    flex: 0 0 110px;
+}
+
+#footer-principal-centro form .newsletter-campos input{
+    width: 150px;
+    flex: 1 1 150px;
+}
+
+#footer-principal-centro form .newsletter-campos input, 
+#footer-principal-centro form .newsletter-campos button {
+    height: 2rem;
+    font-size: 13px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    margin: 0;
+}
+
+
+
+#iconos-footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 5px 0;
+   gap: 4px;
+}
+
+.icono-footer {
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+}

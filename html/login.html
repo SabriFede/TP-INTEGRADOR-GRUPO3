@@ -11,20 +11,48 @@
 <body>
 
     <div class="formulario">
-        <h1>Iniciar Sesion</h1>
-        <form action="">
+        <h1>Iniciar Sesión</h1>
+        <form action="/html/datos-personales.html">
 
-            <input type="email" id="email" name="email" placeholder="Email*" required>
-            <input type="password" id="password" name="password" placeholder="Contraseña*" required>
-            <button type="submit">Iniciar Sesion</button>
+            <input type="email" id="email" name="email" placeholder="Email*">
+            <input type="password" id="password" name="password" placeholder="Contraseña*">
+            <button type="submit">INICIAR SESIÓN</button>
             
 
         </form>
-        <p>¿No tenes cuenta? <a target="_blank" href="registrarse.html">Registrate</a></p>
+        <p>¿No tenés cuenta? <a target="_blank" href="registrarse.html">Registrate</a></p>
 
-        <p>Al continuar, confirmo que he leido y aceptado los <a target="_blank" href="terminos-y-condiciones.html">Terminos y condiciones</a> y las <a target="_blank"
-                href="politicas-de-privacidad.html">Politicas de Privacidad de</a></p>
+        <p class="terminos-y-condiciones">Al continuar, confirmo que he leido y aceptado los <a target="_blank" href="terminos-y-condiciones.html">Terminos y condiciones</a> y las <a target="_blank"
+                href="politicas-de-privacidad.html">Politicas de Privacidad</a></p>
     </div>
+
+    <footer id="footer-principal">
+
+      <div id="footer-principal-izquierda">
+         <p>Política de Privacidad<br>Términos y Condiciones</p>
+      </div>
+
+      <div id="footer-principal-centro">
+         <p>Síguenos</p>
+         <div id="iconos-footer">
+            <img src="../assets/img/LogoFACEBOOK.png" alt="Logo de Facebook" class="icono-footer">
+            <img src="../assets/img/LogoTWITTER.png" alt="Logo de Twitter" class="icono-footer">
+            <img src="../assets/img/LogoINSTAGRAM.png" alt="Logo de Instagram" class="icono-footer">
+         </div>
+         <form action="">
+            <p>Suscribirse a la Newsletter</p>
+            <div class="newsletter-campos"><label for="correo"></label>
+            <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico">
+            <button type="submit">Suscribirse</button>
+        </div>    
+         </form>
+      </div>
+
+      <div id="footer-principal-derecha">
+         <p>Acerca de Nosotros<br>Contáctanos</p>
+      </div>
+   </footer>
+
 </body>
 
 </html>
