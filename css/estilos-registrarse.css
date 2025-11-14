@@ -30,6 +30,10 @@ h1 {
   }
 }
 
+small {
+    display: block;
+}
+
 .formulario {
 
     position: relative;
