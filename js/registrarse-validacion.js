@@ -14,7 +14,7 @@ function validarEmail(valorEmail){
 }
 
 function validarPassword(valorPassword){
-    const passwordRegex = /^(?=.[A-Z])(?=.[a-z])(?=.\d)(?=.[#?!%$]).+$/
+    const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[#?!%$]).+$/
     return passwordRegex.test(valorPassword);
 }
 

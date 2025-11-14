@@ -12,11 +12,21 @@
 
     <div class="formulario">
         <h1>Iniciar Sesión</h1>
-        <form action="/html/datos-personales.html">
+        <form id="form-login" action="/html/datos-personales.html" method="get">
 
+         <div class="campo">
             <input type="email" id="email" name="email" placeholder="Email*">
+            <br>
+            <small id="error-email" class="error"></small>
+         </div>
+            
+         <div class="campo">
             <input type="password" id="password" name="password" placeholder="Contraseña*">
-            <button type="submit">INICIAR SESIÓN</button>
+            <br>
+            <small id="error-password" class="error"></small>
+         </div>
+            
+            <button type="submit" id="button-login" disabled>INICIAR SESIÓN</button>
             
 
         </form>
@@ -52,7 +62,7 @@
          <p>Acerca de Nosotros<br>Contáctanos</p>
       </div>
    </footer>
-
+   <script src="/js/login-validacion.js"></script>
 </body>
 
 </html>

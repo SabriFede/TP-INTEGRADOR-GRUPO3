@@ -95,6 +95,17 @@ button:hover{
     background: linear-gradient(to right, var(--dark-color-acento-2), var(--dark-color-acento-3));
 }
 
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;       
+    opacity: 0.7;               
+}
+
+button:disabled:hover {
+    background: #ccc;
+}
+
 /* Celulares y pantallas pequeñas */
 @media (max-width: 600px) {
     .formulario{
