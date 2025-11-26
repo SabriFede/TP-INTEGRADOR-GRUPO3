@@ -13,14 +13,14 @@ html, body {
 }
 
 #encabezado-principal {
-   background-color: rgb(255, 255, 255);
-   color: white;
+   background-color: var(--light-color-fondo);
+   color: #ffffff;
    width: 100%;
    height: 8vh;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   border-bottom: 1px solid #555555;
+   border-bottom: 1px solid #2d2d2d;
    padding: 0 40px;
 }
 
@@ -35,7 +35,7 @@ html, body {
 .logo-contenedor{
    max-width: 6vh;
    height: 6vh;
-   background-color: #DCDCDC;
+   background-color: var(--light-color-acento-1);
    border-radius: 50%;
    display: flex;
    justify-content: center;
@@ -52,9 +52,9 @@ html, body {
     display: flex;
     width: 100%;
     height: 45px;
-    background-color: #f1f1f1;
+    background-color: var(--light-color-acento-1);
     border-radius: 50px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--light-color-acento-1);
     overflow: hidden;
 }
 
@@ -71,7 +71,7 @@ html, body {
 
 #search-button {
     flex: 0 0 45px;       /* ancho fijo de 45px, nunca desaparece */
-    background-color: #DCDCDC;
+    background-color: var(--light-color-acento-1);
     border: none;
     display: flex;
     justify-content: center;
@@ -88,7 +88,7 @@ html, body {
    display: flex;
    align-items: center;
    justify-content: space-around;
-   background-color: #DCDCDC;
+   background-color: var(--light-color-acento-1);
    /* border: 2px solid #DCDCDC; */
    border-radius: 25px;
    height: 6vh;
@@ -127,7 +127,7 @@ main{
 }
 
 .articulo-categoria {
-   border: solid 3px black;
+   border: solid 3px var(--light-color-texto);
    display: flex;
    flex-direction: column;
    text-align: center;
@@ -147,7 +147,7 @@ main{
 
 #footer-principal {
    background-color: blue;
-   color: white;
+   color: var(--light-color-fondo);
 }
 
 #qr-code {
@@ -180,23 +180,25 @@ main{
 .item-valor-nombre {
    text-transform: uppercase;
    font-family: 'Jersey 10';
+   color: var(--light-color-texto);
    font-size: xxx-large;
    margin-top: 10px;
    margin-bottom: 10px;
    border: 0px;
    border-bottom: 1px;
-   border-color: black;
+   border-color: var(--light-color-texto);
    border-style: solid;
    
 }
 
 .item-valor-autor {
 font-family: 'Space Grotesk';
-
+color: var(--light-color-texto);
 }
 
 .item-valor-descripcion {
    font-family: 'Space Grotesk';
+   color: var(--light-color-texto);
 }
 
 .item-valor-rating {
@@ -228,13 +230,13 @@ font-family: 'Space Grotesk';
 
 #footer-principal {
    margin-top: 20px;
-   border-top: 1px solid black;
+   border-top: 1px solid var(--light-color-texto);
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 15px;
-   color: black;
-   background-color: white;
+   color: var(--light-color-texto);
+   background-color: var(--light-color-fondo);
    font-family: 'Work Sans';
 }
 
@@ -264,7 +266,7 @@ font-family: 'Space Grotesk';
 }
 
 #navegacion-categoria {
-   background-color: #DCDCDC;
+   background-color: var(--light-color-acento-1);
    display: flex;
    justify-content: center;
    border: none;
@@ -277,31 +279,31 @@ font-family: 'Space Grotesk';
    text-align: center;
    padding: 10px;
    flex: 1;
-   background-color: white;
-   border: solid #DCDCDC 1px;
+   background-color: var(--light-color-fondo);
+   border: solid var(--light-color-acento-1) 1px;
    border-radius: 8px;
    text-decoration: none;
 }
 
 #tab-categoria-1:hover{
-   background-color: var(--light-color-acento-3);
-   color: var(--light-color-texto);
+   background-color: #ffe88b;
+   color: #000000;
 }
 #tab-categoria-2:hover{
-   background-color: var(--dark-color-acento-2);
-   color: var(--light-color-fondo);
+   background-color: #2d74fe;
+   color: #ffffff;
 }
 #tab-categoria-3:hover{
-   background-color: var(--light-color-acento-2);
-   color: var(--light-color-fondo);
+   background-color: #ff8b8e;
+   color: #000000;
 }
 #tab-categoria-4:hover{
-   background-color: var(--dark-color-acento-3);
-   color: var(--light-color-fondo);
+   background-color: #2dd22d;
+   color: #ffffff;
 }
 #tab-categoria-5:hover{
-   background: linear-gradient(to right, var(--light-color-acento-2), var(--dark-color-acento-2));
-   color: var(--light-color-fondo);
+   background: linear-gradient(to right, #ff8b8e, #2d74fe);
+   color: #000000;
 }
 /* Tablet y pantallas medianas */
 @media (max-width:  1024px) {
