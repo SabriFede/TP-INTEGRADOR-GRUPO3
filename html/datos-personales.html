@@ -16,43 +16,63 @@
             <div class="boton">
                 <div><label for="email">Email Principal</label></div>
                 <input type="email" id="email" name="email" placeholder="@gmail.com" required>
-                <button type="submit">GUARDAR CAMBIOS</button>
+                <br>
+                <small id="error-email-p" class="error"></small>
+                <button type="submit" id="guardar-email" disabled>GUARDAR CAMBIOS</button>
                 <input type="password" id="password" name="password" placeholder="Contraseña*" required>
-                <button type="submit">CAMBIAR</button>
+                <br>
+                <small id="error-contra" class="error"></small>
+                <button type="submit" id="cambiar-contra" disabled>CAMBIAR</button>
             </div>
             <h2>Datos Personales</h2>
             <div class="form-contenedor">
                 <div class="grupo-formulario">
                     <label for="nombre"> Nombre</label>
                     <input type="nombre" id="nombre" name="nombre" required>
+                    <br>
+                    <small id="error-nombre" class="error"></small>
                 </div>
                 <div class="grupo-formulario">
                     <label for="apellido">Apellido</label>
                     <input type="apellido" id="apellido" name="apellido" required>
+                    <br>
+                    <small id="error-apellido" class="error"></small>
                 </div>
                 <div class="grupo-formulario">
                     <label for="tipo-doc">Tipo</label>
-                    <input type="tipo-doc" id="tipo-doc" name="tipo-doc" required>
+                    <select id="tipo-doc" name="tipo-doc" required>
+                        <option value="dni">DNI</option>
+                        <option value="ci">CI</option>
+                        <option value="pasaporte">Pasaporte</option>
+                    </select>
                 </div>
                 <div class="grupo-formulario">
                     <label for="documento">Número de Documento</label>
                     <input type="documento" id="documento" name="documento" required>
+                    <br>
+                    <small id="error-dni" class="error"></small>
                 </div>
                 <div class="grupo-formulario">
                     <label for="date">Fecha de Nacimiento</label>
                     <input type="date" id="fecha" name="fecha" required>
+                    <br>
+                    <small id="error-edad" class="error"></small>
                 </div>
                 <div class="grupo-formulario">
                     <label for="tel">Teléfono Celular</label>
                     <input type="tel" id="tel" name="tel">
+                    <br>
+                    <small id="error-telefono" class="error"></small>
                 </div>
                 <div class="grupo-formulario">
                     <label for="email">Email Alternativo</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email-alt">
+                    <br>
+                    <small id="error-email-alt" class="error"></small>
                 </div>
             </div>
             <div class="boton">
-                <button type="submit">GUARDAR CAMBIOS</button>
+                <button type="submit" id="guardar-cambios" disabled>GUARDAR CAMBIOS</button>
             </div>
         </form>
 
@@ -84,7 +104,7 @@
          <p>Acerca de Nosotros<br>Contáctanos</p>
       </div>
    </footer>
-   
+   <script src="/js/datos-p-validacion.js"></script>
 </body>
 
 </html>

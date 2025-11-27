@@ -40,7 +40,8 @@ h2{
 
 .formulario {
     border-radius: 30px;
-    max-width: 60vh;
+    max-width: 90%;
+    min-width: 38vw;
     padding: 10px;
     flex: 1;
     background: 
@@ -59,6 +60,13 @@ input {
     border-radius: 5px;
 
 }
+select {
+    min-width: 80%;
+    height: 30px;
+    margin: 2px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+}
 
 button {
     background: linear-gradient(to right, var(--light-color-acento-2), var(--light-color-acento-3));
@@ -74,6 +82,16 @@ button {
 
 button:hover{
     background: linear-gradient(to right, var(--dark-color-acento-2), var(--dark-color-acento-3));
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;       
+    opacity: 0.7;               
+}
+
+button:disabled:hover {
+    background: #ccc;
 }
 
 .boton {
@@ -98,19 +116,7 @@ text-align: center;
     width: 100%;
 }
 
-/* Celulares y pantallas pequeñas */
-@media (max-width: 600px) {
-    .formulario {
-        max-width: 90%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
 
-    .form-contenedor {
-        grid-template-columns: 1fr;  /* solo una columna */
-        width: 80%;
-    }
-}
 
 #footer-principal {
    width: 100%;
@@ -136,31 +142,6 @@ text-align: center;
     min-width: 150px;
 }
 
-@media (max-width: 768px) {
-    #footer-principal-centro {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-     #footer-principal-centro > div {
-        flex: 1 1 100%;
-        margin-bottom: 15px;
-    }
-
-     #footer-principal-centro form .newsletter-campos {
-        display: flex;
-        gap: 5px;
-        align-items: center;
-        flex-wrap: wrap;
-     }
-
-       #footer-principal-centro form .newsletter-campos input,
-    #footer-principal-centro form .newsletter-campos button {
-        width: 100%;
-
-    }
-}
 
 #footer-principal-izquierda p,
 #footer-principal-centro p,
@@ -231,4 +212,46 @@ text-align: center;
    width: 30px;
    height: 30px;
    cursor: pointer;
+}
+
+
+
+/* Celulares y pantallas pequeñas */
+@media (max-width: 1300px) {
+    .formulario {
+        max-width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .form-contenedor {
+        grid-template-columns: 1fr;  /* solo una columna */
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    #footer-principal-centro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+     #footer-principal-centro > div {
+        flex: 1 1 100%;
+        margin-bottom: 15px;
+    }
+
+     #footer-principal-centro form .newsletter-campos {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        flex-wrap: wrap;
+     }
+
+       #footer-principal-centro form .newsletter-campos input,
+    #footer-principal-centro form .newsletter-campos button {
+        width: 100%;
+
+    }
 }
