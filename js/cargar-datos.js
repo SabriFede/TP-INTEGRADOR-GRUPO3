@@ -7,6 +7,9 @@ let linksCategorias = document.querySelectorAll("a.tab-categoria");
 
 linksCategorias.forEach((linkCategoria) => {
    linkCategoria.addEventListener("click", () => {
+
+      linksCategorias.forEach(link => link.classList.remove('active'));
+
       items.forEach((item) => {
          const { Categoria, Id, Nombre, Autor, Portada, Descripcion, Rating } = item;
 
@@ -28,6 +31,9 @@ linksCategorias.forEach((linkCategoria) => {
             articuloContenedor.getElementsByClassName(`item-campo-personalizado_${index + 1}`)[0].innerText = personalizado.split(".")[1];
             articuloContenedor.getElementsByClassName(`item-valor-personalizado_${index + 1}`)[0].innerText = item[personalizado];
          });
+
+         linkCategoria.classList.add("active");
+
 
          articuloContenedor.id = Id;
       });

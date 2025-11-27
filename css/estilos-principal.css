@@ -24,7 +24,13 @@ html, body {
    padding: 0 40px;
 }
 
+.carousel-contenedor {
+   height: 230px; 
+}
 
+.carousel-inner img {
+   height: 200px;
+}
 
 #LogoTEMACLARO{
    width: auto;
@@ -303,6 +309,31 @@ font-family: 'Space Grotesk';
    background: linear-gradient(to right, var(--light-color-acento-2), var(--dark-color-acento-2));
    color: var(--light-color-fondo);
 }
+
+#tab-categoria-1.active{
+   background-color: var(--light-color-acento-3);
+   color: var(--light-color-texto);
+}
+#tab-categoria-2.active{
+   background-color: var(--dark-color-acento-2);
+   color: var(--light-color-fondo);
+}
+#tab-categoria-3.active{
+   background-color: var(--light-color-acento-2);
+   color: var(--light-color-fondo);
+}
+#tab-categoria-4.active{
+   background-color: var(--dark-color-acento-3);
+   color: var(--light-color-fondo);
+}
+#tab-categoria-5.active{
+   background: linear-gradient(to right, var(--light-color-acento-2), var(--dark-color-acento-2));
+   color: var(--light-color-fondo);
+}
+
+
+
+
 /* Tablet y pantallas medianas */
 @media (max-width:  1024px) {
     #encabezado-principal {

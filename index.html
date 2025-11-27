@@ -1,10 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Grupo 3 | Pokemon</title>
-      
+
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
    <link rel="stylesheet" href="css/estilos-principal.css">
 </head>
@@ -23,61 +24,79 @@
             </button>
          </form>
       </div>
-      
+
       <div id="iconos-encabezado" class="contenedor">
          <img id="icono-tema" class="icono" src="assets/img/tema-a-oscuro.svg">
          <img id="icono-favorito" class="icono" src="assets/img/corazon.svg">
-         <img id="icono-usuario" class="icono" src="assets/img/usuario.svg">
+         <a href="html/login.html"><img id="icono-usuario" class="icono" src="assets/img/usuario.svg"></a>
       </div>
    </header>
    <header id="encabezado-secundario">
-      <div id="carrusel" class="carousel-contenedor carousel carousel-dark slide" data-bs-ride="carousesl" data-bs-interval="3000">                    
-            <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/025.png" class="d-block mx-auto" alt="Pikachu">
-                  <div class="carousel-caption d-none d-md-block">
-                     <h5>PIKACHU</h5>                     
-                  </div>
-               </div>
-               <div class="carousel-item">
-                  <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png" class="d-block mx-auto" alt="Squirtle">
-                  <div class="carousel-caption d-none d-md-block">
-                     <h5>SQUIRTLE</h5>                     
-                  </div>
-               </div>
-               <div class="carousel-item">
-                  <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png" class="d-block mx-auto" alt="Charmander">
-                  <div class="carousel-caption d-none d-md-block">
-                     <h5>CHARMANDER</h5>                     
-                  </div>
-               </div>
-               <div class="carousel-item">
-                  <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png" class="d-block mx-auto" alt="Bulbasaur">
-                  <div class="carousel-caption d-none d-md-block">
-                     <h5>BULBASAUR</h5>                     
-                  </div>
-               </div>
-               <div class="carousel-item">
-                  <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/092.png" class="d-block mx-auto" alt="Gastly">
-                  <div class="carousel-caption d-none d-md-block">
-                     <h5>GASTLY</h5>                     
-                  </div>
+      <div id="carrusel" class="carousel-contenedor carousel carousel-dark slide" data-bs-ride="carousesl"
+         data-bs-interval="3000">
+         <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active"
+               aria-current="true" aria-label="Pikachu"></button>
+            <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1"
+               aria-label="Squirtle"></button>
+            <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2"
+               aria-label="Charmander"></button>
+            <button type="button" data-bs-target="#carrusel" data-bs-slide-to="3"
+               aria-label="Bulbasaur"></button>
+            <button type="button" data-bs-target="#carrusel" data-bs-slide-to="4"
+               aria-label="Gastly"></button>
+         </div>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/025.png"
+                  class="d-block mx-auto" alt="Pikachu">
+               <div class="carousel-caption d-none d-md-block">
+                  <h5>PIKACHU</h5>
                </div>
             </div>
+            <div class="carousel-item">
+               <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png"
+                  class="d-block mx-auto" alt="Squirtle">
+               <div class="carousel-caption d-none d-md-block">
+                  <h5>SQUIRTLE</h5>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png"
+                  class="d-block mx-auto" alt="Charmander">
+               <div class="carousel-caption d-none d-md-block">
+                  <h5>CHARMANDER</h5>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png"
+                  class="d-block mx-auto" alt="Bulbasaur">
+               <div class="carousel-caption d-none d-md-block">
+                  <h5>BULBASAUR</h5>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/092.png"
+                  class="d-block mx-auto" alt="Gastly">
+               <div class="carousel-caption d-none d-md-block">
+                  <h5>GASTLY</h5>
+               </div>
+            </div>
+         </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
-               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-               <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
-               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-               <span class="visually-hidden">Next</span>
-            </button>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+         </button>
 
-            
-         </div>  
+
+      </div>
    </header>
-   
+
    <main>
       <nav id="navegacion-categoria">
          <a href="#" id="tab-categoria-1" class="tab-categoria">Eléctrico</a>
@@ -93,11 +112,15 @@
       <section id="seccion-categoria">
          <article id="categoria00-item01" class="articulo-categoria item01">
             <header class="header-articulo">
-               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM 1</p>
-               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 1</p>
+               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM
+                  1</p>
+               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 1
+               </p>
                <img class="item-valor-portada" src='assets/img/categoria00-item01.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 1</p>
-               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM 1</p>
+               <p class="item-valor-descripcion"><span
+                     style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 1</p>
+               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM
+                  1</p>
             </header>
             <div class="detalle-articulo">
                <h4 class="item-campo-personalizado_1" style="color:gray;">CAMPO PERSONALIZADO 1</h4>
@@ -115,11 +138,15 @@
 
          <article id="categoria00-item02" class="articulo-categoria item02">
             <header class="header-articulo">
-               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM 2</p>
-               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 2</p>
+               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM
+                  2</p>
+               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 2
+               </p>
                <img class="item-valor-portada" src='assets/img/categoria00-item02.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 2</p>
-               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM 2</p>
+               <p class="item-valor-descripcion"><span
+                     style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 2</p>
+               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM
+                  2</p>
             </header>
             <div class="detalle-articulo">
                <h4 class="item-campo-personalizado_1" style="color:gray;">CAMPO PERSONALIZADO 1</h4>
@@ -137,11 +164,15 @@
 
          <article id="categoria00-item03" class="articulo-categoria item03">
             <header class="header-articulo">
-               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM 3</p>
-               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 3</p>
+               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM
+                  3</p>
+               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 3
+               </p>
                <img class="item-valor-portada" src='assets/img/categoria00-item03.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 3</p>
-               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM 3</p>
+               <p class="item-valor-descripcion"><span
+                     style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 3</p>
+               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM
+                  3</p>
             </header>
             <div class="detalle-articulo">
                <h4 class="item-campo-personalizado_1" style="color:gray;">CAMPO PERSONALIZADO 1</h4>
@@ -159,11 +190,15 @@
 
          <article id="categoria00-item04" class="articulo-categoria item04">
             <header class="header-articulo">
-               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM 4</p>
-               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 4</p>
+               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM
+                  4</p>
+               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 4
+               </p>
                <img class="item-valor-portada" src='assets/img/categoria00-item04.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 4</p>
-               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM 4</p>
+               <p class="item-valor-descripcion"><span
+                     style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 4</p>
+               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM
+                  4</p>
             </header>
             <div class="detalle-articulo">
                <h4 class="item-campo-personalizado_1" style="color:gray;">CAMPO PERSONALIZADO 1</h4>
@@ -181,11 +216,15 @@
 
          <article id="categoria00-item05" class="articulo-categoria item05">
             <header class="header-articulo">
-               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM 5</p>
-               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 5</p>
+               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM
+                  5</p>
+               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 5
+               </p>
                <img class="item-valor-portada" src='assets/img/categoria00-item05.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 5</p>
-               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM 5</p>
+               <p class="item-valor-descripcion"><span
+                     style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 5</p>
+               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM
+                  5</p>
             </header>
             <div class="detalle-articulo">
                <h4 class="item-campo-personalizado_1" style="color:gray;">CAMPO PERSONALIZADO 1</h4>
@@ -203,11 +242,15 @@
 
          <article id="categoria00-item06" class="articulo-categoria item06">
             <header class="header-articulo">
-               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM 6</p>
-               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 6</p>
+               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM
+                  6</p>
+               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 6
+               </p>
                <img class="item-valor-portada" src='assets/img/categoria00-item06.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 6</p>
-               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM 6</p>
+               <p class="item-valor-descripcion"><span
+                     style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 6</p>
+               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM
+                  6</p>
             </header>
             <div class="detalle-articulo">
                <h4 class="item-campo-personalizado_1" style="color:gray;">CAMPO PERSONALIZADO 1</h4>
@@ -225,11 +268,15 @@
 
          <article id="categoria00-item07" class="articulo-categoria item07">
             <header class="header-articulo">
-               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM 7</p>
-               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 7</p>
+               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM
+                  7</p>
+               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 7
+               </p>
                <img class="item-valor-portada" src='assets/img/categoria00-item07.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 7</p>
-               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM 7</p>
+               <p class="item-valor-descripcion"><span
+                     style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 7</p>
+               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM
+                  7</p>
             </header>
             <div class="detalle-articulo">
                <h4 class="item-campo-personalizado_1" style="color:gray;">CAMPO PERSONALIZADO 1</h4>
@@ -247,11 +294,15 @@
 
          <article id="categoria00-item08" class="articulo-categoria item08">
             <header class="header-articulo">
-               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM 8</p>
-               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 8</p>
+               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM
+                  8</p>
+               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 8
+               </p>
                <img class="item-valor-portada" src='assets/img/categoria00-item08.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 8</p>
-               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM 8</p>
+               <p class="item-valor-descripcion"><span
+                     style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 8</p>
+               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM
+                  8</p>
             </header>
             <div class="detalle-articulo">
                <h4 class="item-campo-personalizado_1" style="color:gray;">CAMPO PERSONALIZADO 1</h4>
@@ -269,11 +320,15 @@
 
          <article id="categoria00-item09" class="articulo-categoria item09">
             <header class="header-articulo">
-               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM 9</p>
-               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 9</p>
+               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM
+                  9</p>
+               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 9
+               </p>
                <img class="item-valor-portada" src='assets/img/categoria00-item09.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 9</p>
-               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM 9</p>
+               <p class="item-valor-descripcion"><span
+                     style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 9</p>
+               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM
+                  9</p>
             </header>
             <div class="detalle-articulo">
                <h4 class="item-campo-personalizado_1" style="color:gray;">CAMPO PERSONALIZADO 1</h4>
@@ -291,11 +346,15 @@
 
          <article id="categoria00-item10" class="articulo-categoria item10">
             <header class="header-articulo">
-               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM 10</p>
-               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 10</p>
+               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM
+                  10</p>
+               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 10
+               </p>
                <img class="item-valor-portada" src='assets/img/categoria00-item10.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 10</p>
-               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM 10</p>
+               <p class="item-valor-descripcion"><span
+                     style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 10</p>
+               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM
+                  10</p>
             </header>
             <div class="detalle-articulo">
                <h4 class="item-campo-personalizado_1" style="color:gray;">CAMPO PERSONALIZADO 1</h4>
@@ -313,11 +372,15 @@
 
          <article id="categoria00-item11" class="articulo-categoria item11">
             <header class="header-articulo">
-               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM 11</p>
-               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 11</p>
+               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM
+                  11</p>
+               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 11
+               </p>
                <img class="item-valor-portada" src='assets/img/categoria00-item11.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 11</p>
-               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM 11</p>
+               <p class="item-valor-descripcion"><span
+                     style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 11</p>
+               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM
+                  11</p>
             </header>
             <div class="detalle-articulo">
                <h4 class="item-campo-personalizado_1" style="color:gray;">CAMPO PERSONALIZADO 1</h4>
@@ -335,11 +398,15 @@
 
          <article id="categoria00-item12" class="articulo-categoria item12">
             <header class="header-articulo">
-               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM 12</p>
-               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 12</p>
+               <p class="item-valor-nombre"><span style="font-weight:bold;text-transform:uppercase;">Nombre</span> ITEM
+                  12</p>
+               <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 12
+               </p>
                <img class="item-valor-portada" src='assets/img/categoria00-item12.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 12</p>
-               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM 12</p>
+               <p class="item-valor-descripcion"><span
+                     style="font-weight:bold;text-transform:uppercase;">DescripciÃ³n</span> ITEM 12</p>
+               <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;">Rating</span> ITEM
+                  12</p>
             </header>
             <div class="detalle-articulo">
                <h4 class="item-campo-personalizado_1" style="color:gray;">CAMPO PERSONALIZADO 1</h4>
@@ -386,8 +453,9 @@
    <!-- INICIO | NO MODIFICAR/NO QUITAR: 'cargar-datos.js' realiza la carga de datos -->
    <script type="module" src="js/cargar-datos.js"></script>
    <!-- FIN | NO MODIFICAR/NO QUITAR: 'cargar-datos.js' realiza la carga de datos -->
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
