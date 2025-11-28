@@ -25,14 +25,14 @@
    --light-color-texto: #dcdcdc;
    --light-color-fondo: #000000;
    --light-color-acento-1: #2d2d2d;
-   --light-color-acento-2: #ff8b8e;
-   --light-color-acento-3: #ffe88b;
+   --light-color-acento-2: #2dd22d;
+   --light-color-acento-3: #2d74fe;
 
    --dark-color-texto: #ffffff;
    --dark-color-fondo: #ffffff;
    --dark-color-acento-1: #dcdcdc;
-   --dark-color-acento-2: #2d74fe;
-   --dark-color-acento-3: #2dd22d;
+   --dark-color-acento-2: #ffe88b;
+   --dark-color-acento-3: #ff8b8e;
 }
 
  .light-theme {

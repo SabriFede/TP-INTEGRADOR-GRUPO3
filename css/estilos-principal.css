@@ -147,7 +147,7 @@ main{
 }
 
 .articulo-categoria.clicked {
-   background-color: #d1e7dd;   
+   background-color: var(--light-color-acento-3);   
 }
 
 
